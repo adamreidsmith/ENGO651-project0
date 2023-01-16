@@ -1,0 +1,180 @@
+/* Sass variable definitions */
+html, body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+/* Sass property for inheritance */
+.header-sport, .header-index {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+
+.header-index {
+  /* Set and position the background image */
+  background-image: url("media/slab.jpg");
+  height: 40.9649vw; /* Ratio of image height to width */
+}
+
+.header-sport {
+  /* Set and position the background image */
+  background-image: url("media/sister2.jpg");
+  height: 30.104vw; /* Ratio of image height to width */
+}
+
+.header .container {
+  position: absolute;
+  margin: 3vw 8vw;
+  max-width: 500px;
+}
+
+nav a {
+  font-size: 18pt;
+  font-weight: 200;
+  text-decoration: none;
+  color: white;
+  /* Enlarge the links when hovered */
+  transition: transform 0.2s ease-in-out;
+}
+
+nav.navbar-sport a {
+  color: darkslategrey;
+}
+
+nav a:hover {
+  /* Enlarge the links when hovered */
+  transform: scale(1.2);
+}
+
+#title {
+  position: absolute;
+  top: 18vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+#title h1 {
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 45pt;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  transform: translate(0.25rem, 0);
+}
+
+#title h2 {
+  text-align: center;
+  font-size: 18pt;
+}
+
+#media-links a {
+  text-decoration: none;
+}
+
+#media-links {
+  text-align: center;
+}
+
+a > img {
+  width: 30px;
+  margin: 6px;
+  border-radius: 50%;
+}
+
+a > img:hover {
+  opacity: 0.8;
+}
+
+.section {
+  text-align: center;
+  margin: 2.5vw;
+}
+
+.section-title {
+  font-size: 28pt;
+  margin: 20px;
+  color: darkslategrey;
+  letter-spacing: 0.2rem;
+}
+
+.section.section-results {
+  margin: 0 1vw 1vw 1vw;
+}
+
+.section.section-results .section-title {
+  font-size: 22pt;
+}
+
+.content {
+  margin: 0 18vw;
+  padding: 30px;
+  background-color: #b9ddfa;
+  border-radius: 20px;
+}
+
+.content.content-sport {
+  margin: 1vw 1vw;
+  text-justify: left;
+}
+
+table {
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+table th, table td {
+  text-align: center;
+  padding: 5px;
+}
+table th {
+  background-color: #85a9c7;
+}
+table th:first-of-type {
+  border-top-left-radius: 10px;
+}
+table th:last-of-type {
+  border-top-right-radius: 10px;
+}
+table tr:nth-of-type(odd) {
+  background-color: #9dc3e3;
+}
+table tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 10px;
+}
+table tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width: 780px) {
+  nav a {
+    font-size: 15pt;
+  }
+  #title {
+    left: 10%;
+    top: 14vw;
+    transform: translate(0, 0);
+  }
+  #title h1 {
+    text-align: left;
+    font-size: 32pt;
+  }
+  #title h2 {
+    text-align: left;
+    font-size: 16pt;
+  }
+  .header .container {
+    margin: 2vw 6vw;
+    max-width: 400px;
+  }
+  #media-links {
+    text-align: left;
+  }
+  .content {
+    margin: 8vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
