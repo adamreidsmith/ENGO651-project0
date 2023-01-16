@@ -1,0 +1,104 @@
+html, body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+#header {
+  /* Set and position the background image */
+  background-image: url("media/slab.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 40.9649vw; /* Ratio of image height to width */
+}
+
+#header .container {
+  position: absolute;
+  margin: 3vw 8vw;
+  max-width: 500px;
+}
+
+nav a {
+  font-size: 16pt;
+  font-weight: 200;
+  text-decoration: none;
+  color: white;
+  /* Enlarge the links when hovered */
+  transition: transform 0.2s ease-in-out;
+}
+
+nav a:hover {
+  /* Enlarge the links when hovered */
+  transform: scale(1.2);
+}
+
+#title {
+  position: absolute;
+  top: 18vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+#title h1 {
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 45pt;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  transform: translate(0.25rem, 0);
+}
+
+#title h2 {
+  text-align: center;
+  font-size: 18pt;
+}
+
+#media-links a {
+  text-decoration: none;
+}
+
+#media-links {
+  text-align: center;
+}
+
+a > img {
+  width: 30px;
+  margin: 6px;
+  border-radius: 50%;
+}
+
+a > img:hover {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 780px) {
+  #title {
+    left: 10%;
+    top: 14vw;
+    transform: translate(0, 0);
+  }
+  #title h1 {
+    text-align: left;
+    font-size: 32pt;
+  }
+  #title h2 {
+    text-align: left;
+    font-size: 16pt;
+  }
+  #header .container {
+    margin: 2vw 6vw;
+    max-width: 400px;
+  }
+  #media-links {
+    text-align: left;
+  }
+}
+.section {
+  text-align: center;
+  font-size: 28pt;
+  margin: 20px;
+}
+
+/*# sourceMappingURL=index.css.map */
