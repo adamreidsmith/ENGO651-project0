@@ -5,7 +5,7 @@ html, body {
 }
 
 /* Sass property for inheritance */
-.header-sport, .header-index {
+.header-photos, .header-sport, .header-index {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,6 +22,12 @@ html, body {
   /* Set and position the background image */
   background-image: url("media/sister2.jpg");
   height: 30.104vw; /* Ratio of image height to width */
+}
+
+.header-photos {
+  /* Set and position the background image */
+  background-image: url("media/tiara.jpg");
+  height: 26.862vw; /* Ratio of image height to width */
 }
 
 .header .container {
@@ -45,7 +51,13 @@ nav.navbar-sport a {
 
 nav a:hover {
   /* Enlarge the links when hovered */
-  transform: scale(1.2);
+  transform: scale(1.15);
+  text-decoration: none;
+  color: white;
+}
+
+nav.navbar-sport a:hover {
+  color: darkslategrey;
 }
 
 #title {
@@ -146,6 +158,15 @@ table tr:last-of-type td:first-of-type {
 }
 table tr:last-of-type td:last-of-type {
   border-bottom-right-radius: 10px;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+}
+
+#photo-carousel {
+  border: 1px solid red;
 }
 
 @media only screen and (max-width: 780px) {

@@ -29,6 +29,13 @@ html, body {
     height: 30.104vw;  /* Ratio of image height to width */
 }
 
+.header-photos {
+    /* Set and position the background image */
+    @extend %header-shared;
+    background-image: url("media/tiara.jpg");
+    height: 26.862vw;  /* Ratio of image height to width */
+}
+
 .header .container {
     position: absolute;
     margin: 3vw 8vw;
@@ -51,7 +58,13 @@ nav.navbar-sport a {
 
 nav a:hover {
     /* Enlarge the links when hovered */
-    transform: scale(1.2);
+    transform: scale(1.15);
+    text-decoration: none;
+    color: white;
+}
+
+nav.navbar-sport a:hover {
+    color: $dark-text-color;
 }
 
 #title {
@@ -162,6 +175,15 @@ table {
         }
     }
 
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+}
+
+#photo-carousel {
+    border: 1px solid red;
 }
 
 
