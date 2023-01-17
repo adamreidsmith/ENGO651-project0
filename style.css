@@ -15,7 +15,7 @@ html, body {
 .header-index {
   /* Set and position the background image */
   background-image: url("media/slab.jpg");
-  height: 40.9649vw; /* Ratio of image height to width */
+  height: 40.965vw; /* Ratio of image height to width */
 }
 
 .header-sport {
