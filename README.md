@@ -8,7 +8,7 @@ This repository composes a simple personal website describing a bit about me and
 
 ## File descriptions
 
-The files [index.html](./index.html), [sport.html](./sport.html), [photos.html](./photos.html), and [contact.html](./contact.html) contain the HTML code for the home, sport, photo gallery, and contact pages respectively.  CSS styling for all the pages is included in the [style.scss](./style.scss) file.  The file                 The [media](./media) directory contains all images and icons that are displayed on the webpage.
+The files [index.html](./index.html), [sport.html](./sport.html), [photos.html](./photos.html), and [contact.html](./contact.html) contain the HTML code for the home, sport, photo gallery, and contact pages respectively.  CSS styling for all the pages is included in the [style.scss](./style.scss) file.  This file is divided into 6 sections: styling which applies to all pages, styling which applies to each of the four pages, and the media query for adjusting the styling on smaller screens.  The [media](./media) directory contains all images and icons that are displayed on the webpage.
 
 ## Project requirements
 
