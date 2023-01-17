@@ -2,45 +2,19 @@
 $letter-space: 0.5rem;
 $dark-text-color: darkslategrey;
 
+
+/****** Shared Styling ******/
+
 html, body {
     margin: 0;
     font-family: Montserrat, sans-serif;
 }
 
-/* Sass property for inheritance */
 %header-shared {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-}
-
-.header-index {
-    /* Set and position the background image */
-    @extend %header-shared;
-    background-image: url("media/slab.jpg");
-    height: 40.965vw;  /* Ratio of image height to width */
-}
-
-.header-sport {
-    /* Set and position the background image */
-    @extend %header-shared;
-    background-image: url("media/sister2.jpg");
-    height: 30.104vw;  /* Ratio of image height to width */
-}
-
-.header-photos {
-    /* Set and position the background image */
-    @extend %header-shared;
-    background-image: url("media/tiara.jpg");
-    height: 26.862vw;  /* Ratio of image height to width */
-}
-
-.header-contact {
-    /* Set and position the background image */
-    @extend %header-shared;
-    background-image: url("media/warf.jpg");
-    height: 30.078vw;  /* Ratio of image height to width */
 }
 
 .header .container {
@@ -72,6 +46,40 @@ nav a:hover {
 
 nav.navbar-sport a:hover, nav.navbar-contact a:hover {
     color: $dark-text-color;
+}
+
+.section {
+    text-align: center;
+    margin: 2.5vw;
+}
+
+.section-title {
+    font-size: 28pt;
+    margin: 20px;
+    color: $dark-text-color;
+    letter-spacing: 0.2rem;
+}
+
+.content {
+    margin: 0 18vw;
+    padding: 30px;
+    background-color: #b9ddfa;
+    border-radius: 20px;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+}
+
+
+/****** Home Page Styling ******/
+
+.header-index {
+    /* Set and position the background image */
+    @extend %header-shared;
+    background-image: url("media/slab.jpg");
+    height: 40.965vw;  /* Ratio of image height to width */
 }
 
 #title {
@@ -114,16 +122,14 @@ a > img:hover {
     opacity: 0.8;
 }
 
-.section {
-    text-align: center;
-    margin: 2.5vw;
-}
 
-.section-title {
-    font-size: 28pt;
-    margin: 20px;
-    color: $dark-text-color;
-    letter-spacing: 0.2rem;
+/****** Sport Page Styling ******/
+
+.header-sport {
+    /* Set and position the background image */
+    @extend %header-shared;
+    background-image: url("media/sister2.jpg");
+    height: 30.104vw;  /* Ratio of image height to width */
 }
 
 .section.section-results {
@@ -132,13 +138,6 @@ a > img:hover {
 
 .section.section-results .section-title {
     font-size: 22pt;
-}
-
-.content {
-    margin: 0 18vw;
-    padding: 30px;
-    background-color: #b9ddfa;
-    border-radius: 20px;
 }
 
 .content.content-sport {
@@ -183,9 +182,14 @@ table {
     }
 }
 
-.footer {
-    width: 100%;
-    height: 100px;
+
+/****** Photo Page Styling ******/
+
+.header-photos {
+    /* Set and position the background image */
+    @extend %header-shared;
+    background-image: url("media/tiara.jpg");
+    height: 26.862vw;  /* Ratio of image height to width */
 }
 
 #photo-carousel {
@@ -201,6 +205,55 @@ table {
     align-items: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
+
+
+/****** Contact Page Styling ******/
+
+.header-contact {
+    /* Set and position the background image */
+    @extend %header-shared;
+    background-image: url("media/warf.jpg");
+    height: 30.078vw;  /* Ratio of image height to width */
+}
+
+ul > li {
+    list-style-type: none;
+    margin-top: 60px;
+}
+
+ul > li:first-of-type {
+    margin-top: 0;
+}
+
+.contact-container {
+    text-align: center;
+}
+
+.contact-inner {
+    display: inline-block;
+    text-align: left;
+    margin: auto;
+}
+
+.content.contact-outer {
+    text-align: center;
+    display: inline-block;
+    align-self: center;
+    margin: auto;
+}
+
+li span {
+    margin-left: 40px;
+    font-size: 15pt;
+    font-weight: 300;
+}
+
+li img {
+    transform: translateY(-2px);
+}
+
+
+/****** Dynamic Styling ******/
 
 @media only screen and (max-width: 780px) {
     nav a {
