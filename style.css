@@ -5,7 +5,7 @@ html, body {
 }
 
 /* Sass property for inheritance */
-.header-photos, .header-sport, .header-index {
+.header-contact, .header-photos, .header-sport, .header-index {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,6 +30,12 @@ html, body {
   height: 26.862vw; /* Ratio of image height to width */
 }
 
+.header-contact {
+  /* Set and position the background image */
+  background-image: url("media/warf.jpg");
+  height: 30.078vw; /* Ratio of image height to width */
+}
+
 .header .container {
   position: absolute;
   margin: 3vw 8vw;
@@ -45,7 +51,7 @@ nav a {
   transition: transform 0.2s ease-in-out;
 }
 
-nav.navbar-sport a {
+nav.navbar-sport a, nav.navbar-contact a {
   color: darkslategrey;
 }
 
@@ -56,7 +62,7 @@ nav a:hover {
   color: white;
 }
 
-nav.navbar-sport a:hover {
+nav.navbar-sport a:hover, nav.navbar-contact a:hover {
   color: darkslategrey;
 }
 

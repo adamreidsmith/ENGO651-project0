@@ -36,6 +36,13 @@ html, body {
     height: 26.862vw;  /* Ratio of image height to width */
 }
 
+.header-contact {
+    /* Set and position the background image */
+    @extend %header-shared;
+    background-image: url("media/warf.jpg");
+    height: 30.078vw;  /* Ratio of image height to width */
+}
+
 .header .container {
     position: absolute;
     margin: 3vw 8vw;
@@ -52,7 +59,7 @@ nav a {
     transition: transform 0.2s ease-in-out;
 }
 
-nav.navbar-sport a {
+nav.navbar-sport a, nav.navbar-contact a {
     color: $dark-text-color;
 }
 
@@ -63,7 +70,7 @@ nav a:hover {
     color: white;
 }
 
-nav.navbar-sport a:hover {
+nav.navbar-sport a:hover, nav.navbar-contact a:hover {
     color: $dark-text-color;
 }
 
