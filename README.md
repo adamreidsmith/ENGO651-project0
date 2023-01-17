@@ -13,5 +13,13 @@ The files [index.html](./index.html), [sport.html](./sport.html), [photos.html](
 ## Project requirements
 
 This project satisfies all requirements:
-    - The website contains 4 pages, and each page is accessable from each other page via the navigation bar in the top left.
-    
+* The website contains 4 pages, and each page is accessable from each other page via the navigation bar in the top left.
+* The [contact.html](./contact.html) page uses an unordered list to display my contact information, a table is used to display recent race results in the [sport.html](./sport.html) page, and several images are dispalyed throughout the site particularly on the [photos.html](./photos.html) page.
+* The styling is contained in [style.scss](./style.scss), which is converted into [style.css](./style.css) by Sass.
+* Many CSS preoperties and selectors are utilized in [style.scss](./style.scss). Some examples of types of selectors I used are:
+    * element1, element2
+    * element1 element2
+    * .class
+    * #id
+    * element1 > element2
+    * element:hover
