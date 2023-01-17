@@ -183,10 +183,18 @@ table {
 }
 
 #photo-carousel {
-    border: 1px solid red;
-    width: 50%;
+    width: 100%;
 }
 
+.carousel-inner {
+    margin: auto;
+    width: 40vw;
+    height: 50vw;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
 
 @media only screen and (max-width: 780px) {
     nav a {
@@ -220,5 +228,10 @@ table {
 
     .content {
         margin: 8vw;
+    }
+
+    .carousel-inner {
+        width: 90vw;
+        height: 105vw;
     }
 }
