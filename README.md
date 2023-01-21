@@ -8,7 +8,7 @@ This repository composes a simple personal website describing a bit about me and
 
 ## File descriptions
 
-The files [index.html](./index.html), [sport.html](./sport.html), [photos.html](./photos.html), and [contact.html](./contact.html) contain the HTML code for the home, sport, photo gallery, and contact pages respectively.  CSS styling for all the pages is included in the [style.scss](./style.scss) file.  This file is divided into 6 sections: styling which applies to all pages, styling which applies to each of the four pages, and the media query for adjusting the styling on smaller screens.  The [media](./media) directory contains all images and icons that are displayed on the webpage.
+The files [index.html](./index.html), [sport.html](./sport.html), [photos.html](./photos.html), and [contact.html](./contact.html) contain the HTML code for the home, sport, photo gallery, and contact pages respectively.  Styling for all the pages is included in the SASS file [style.scss](./style.scss), which SASS converts into [style.css](./style.css).  This file is divided into 6 sections: styling which applies to all pages, styling which applies to each of the four pages, and a media query for adjusting the styling on smaller screens.  The [media](./media) directory contains all images and icons that are displayed on the webpage.
 
 ## Project requirements
 
@@ -25,4 +25,4 @@ This project satisfies all requirements:
     * element:hover
 * A media query is used such that when the display width reduces below 780 pixels, changes are made to the styling of the navigation bar, the photo carousel, the sport paragraph and results table, and other items.
 * A Bootstrap 4 carousel was used to create a photo gallery on the [photos.html](./photos.html) page.  Bootstrap's grid feature was used to position the contents of the [sport.html](./sport.html) page into two columns when the screen is larger than 780 pixels in width.
-* Two Sass variables are defined at the top of the [style.scss](./style.scss) file.  Sass inheritance was used to change the background image on the header of each page while keeping the styling consistent.  Sass nesting was used to style the table of race results on the [sport.html](./sport.html) page.
+* Two SASS variables are defined at the top of the [style.scss](./style.scss) file.  SASS inheritance was used to change the background image on the header of each page while keeping the styling consistent.  SASS nesting was used to style the table of race results on the [sport.html](./sport.html) page.
